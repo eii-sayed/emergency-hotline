@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -23,13 +24,13 @@
 
             <div class="right-nav flex items-center gap-4">
 
-                <div class="heart-count flex items-center gap-2 bg-green-100 rounded-full px-4 py-2">
-                    <p class="  font-bold text-black">0</p>
+                <div class="heart-count-1 flex items-center gap-2 bg-green-100 rounded-full px-4 py-2">
+                    <p id="heart-count" class="  font-bold text-black">0</p>
                     <img src="assets/heart.png" alt="Heart" class="h-5 w-5">
                 </div>
 
-                <div class="coin-count flex items-center gap-2 bg-green-100 rounded-full px-4 py-2">
-                    <p class="  font-bold text-black">100</p>
+                <div class="flex items-center gap-2 bg-green-100 rounded-full px-4 py-2">
+                    <p id="coin-count" class="  font-bold text-black">100</p>
                     <img src="assets/coin.png" alt="Coin" class="h-5 w-5">
                 </div>
 
@@ -58,19 +59,19 @@
 
             <div class="bg-white rounded-lg shadow p-5 flex flex-col justify-between">
                 <div class="flex justify-between">
-                    <img src="assets/emergency.png" alt=""
-                        class="h-10 w-10 bg-red-100 rounded-lg p-2 bg-red-100 rounded-lg p-2  ">
+                    <img src="assets/emergency.png" alt="" class="h-10 w-10 bg-red-100 rounded-lg p-2  ">
                     <i class="fa-regular fa-heart text-lg text-gray-500 "></i>
                 </div>
                 <p class="font-bold text-xl mt-3">National Emergency Number</p>
-                <p class="text-gray-500">National Emengency</p>
+                <p class="text-gray-500">National Emergency</p>
                 <h2 class="text-2xl font-bold text-gray-800  mt-2">999</h2>
                 <p class=" bg-gray-100 rounded-full px-2 w-fit text-center text-gray-500 ">All</p>
                 <div class="flex justify-between items-center mt-4 gap-2 ">
                     <button class="text-gray-600 w-full   py-1 border  border-gray-200 rounded-lg"><i
                             class="fa-regular fa-copy"></i>
                         Copy</button>
-                    <button class="bg-green-600 text-white w-full  py-1  rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button class=" call-btn bg-green-600 text-white w-full  py-1  rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call</button>
                 </div>
             </div>
@@ -88,7 +89,8 @@
                     <button class="text-gray-600 w-full   py-1 border  border-gray-200 rounded-lg"><i
                             class="fa-regular fa-copy"></i>
                         Copy</button>
-                    <button class="bg-green-600 text-white w-full  py-1  rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button class="call-btn bg-green-600 text-white w-full  py-1  rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call</button>
                 </div>
             </div>
@@ -106,7 +108,8 @@
                     <button class="text-gray-600 w-full   py-1 border  border-gray-200 rounded-lg"><i
                             class="fa-regular fa-copy"></i>
                         Copy</button>
-                    <button class="bg-green-600 text-white w-full  py-1  rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button class="call-btn bg-green-600 text-white w-full  py-1  rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call</button>
                 </div>
             </div>
@@ -124,7 +127,8 @@
                     <button class="text-gray-600 w-full   py-1 border  border-gray-200 rounded-lg"><i
                             class="fa-regular fa-copy"></i>
                         Copy</button>
-                    <button class="bg-green-600 text-white w-full  py-1  rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button class="call-btn bg-green-600 text-white w-full  py-1  rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call</button>
                 </div>
             </div>
@@ -142,7 +146,8 @@
                     <button class="text-gray-600 w-full   py-1 border  border-gray-200 rounded-lg"><i
                             class="fa-regular fa-copy"></i>
                         Copy</button>
-                    <button class="bg-green-600 text-white w-full  py-1  rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button class="call-btn bg-green-600 text-white w-full  py-1  rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call</button>
                 </div>
             </div>
@@ -161,7 +166,8 @@
                     <button class="text-gray-600 w-full   py-1 border  border-gray-200 rounded-lg"><i
                             class="fa-regular fa-copy"></i>
                         Copy</button>
-                    <button class="bg-green-600 text-white w-full  py-1  rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button class="call-btn bg-green-600 text-white w-full  py-1  rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call</button>
                 </div>
             </div>
@@ -179,7 +185,8 @@
                     <button class="text-gray-600 w-full   py-1 border  border-gray-200 rounded-lg"><i
                             class="fa-regular fa-copy"></i>
                         Copy</button>
-                    <button class="bg-green-600 text-white w-full  py-1  rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button class="call-btn bg-green-600 text-white w-full  py-1  rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call</button>
                 </div>
             </div>
@@ -197,7 +204,8 @@
                     <button class="text-gray-600 w-full   py-1 border  border-gray-200 rounded-lg"><i
                             class="fa-regular fa-copy"></i>
                         Copy</button>
-                    <button class="bg-green-600 text-white w-full  py-1  rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button class="call-btn bg-green-600 text-white w-full  py-1  rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call</button>
                 </div>
             </div>
@@ -215,23 +223,28 @@
                     <button class="text-gray-600 w-full   py-1 border  border-gray-200 rounded-lg"><i
                             class="fa-regular fa-copy"></i>
                         Copy</button>
-                    <button class="bg-green-600 text-white w-full  py-1  rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button class="call-btn bg-green-600 text-white w-full  py-1  rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call</button>
                 </div>
             </div>
         </section>
 
-        <div class="bg-white rounded-lg shadow p-5 flex flex-col mt-5 ml-0  sm:mt-0 sm:ml-5 ">
+        <!-- RIGHT: call history -->
+        <div class="bg-white rounded-lg shadow p-5 flex flex-col mt-5 ml-0 sm:mt-0 sm:ml-5">
             <div class="flex justify-between items-center mb-4">
-                <h3 class="font-bold text-gray-800"><i class="fa-regular fa-clock text-gray-400 mr-1"></i>Call History
+                <h3 class="font-bold text-gray-800">
+                    <i class="fa-regular fa-clock text-gray-400 mr-1"></i>
+                    Call History
                 </h3>
-                <button class=" bg-green-600 text-white rounded-full px-6 py-2">
+                <button id="clear-history" class="bg-green-600 text-white rounded-full px-6 py-2">
                     Clear
                 </button>
             </div>
+           
             <div>
-                <!-- call hitrory template -->
-                <div class="flex justify-between bg-gray-100 rounded-lg mb-3 px-2">
+                <!-- call history template -->
+                <div class="flex justify-between bg-gray-100 rounded-lg mb-3 p-2">
                     <div>
                         <p class="font-bold ">Fire Service Number</p>
                         <p class="text-gray-500">999</p>
@@ -245,7 +258,8 @@
         </div>
     </main>
 
-    <footer></footer>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
