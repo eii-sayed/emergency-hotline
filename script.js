@@ -7,7 +7,7 @@ for (const heart of hearts) {
     const currentCount = parseInt(heartCount.innerText);
     let newCount;
 
-    if (heart.classList.contains("text-red- 500")) {
+    if (heart.classList.contains("text-red-500")) {
       heart.classList.remove("text-red-500");
       heart.classList.add("text-gray-500");
       newCount = currentCount - 1;
@@ -50,10 +50,7 @@ function renderHistory() {
 
 for (const button of callButtons) {
   button.addEventListener("click", function () {
-    let card = this.parentNode;
-    while (!card.classList.contains("card")) {
-      card = card.parentNode;
-    }
+    const card = this.parentElement.parentElement;
 
     const serviceName = card.querySelector(".name").innerText;
     const serviceNumber = card.querySelector(".number").innerText;
@@ -77,6 +74,8 @@ for (const button of callButtons) {
   });
 }
 
+// clr history
+
 const clearHistoryBtn = document.getElementById("clear-history");
 
 clearHistoryBtn.addEventListener("click", function () {
@@ -84,3 +83,18 @@ clearHistoryBtn.addEventListener("click", function () {
   renderHistory();
 });
 
+// copy
+let copyCount = 0;
+const copyButtons = document.getElementsByClassName("copy-btn");
+const copyCountDisplay = document.querySelector(".copy-count");
+
+for (const btn of copyButtons) {
+  btn.addEventListener("click", function () {
+    const number =
+      this.parentElement.parentElement.querySelector(".number").innerText;
+    navigator.clipboard.writeText(number);
+    copyCount++;
+    copyCountDisplay.innerText = copyCount;
+    alert("copied :" + number);
+  });
+}
